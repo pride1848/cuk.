@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People - CUK</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* 배너 섹션 스타일 */
+        .page-banner {
+            height: 300px; /* 배너 높이 */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner2.jpeg');
+            background-size: cover;
+            /* 위(0%)와 중앙(50%) 사이인 25%로 위치 조정 */
+            background-position: 50% 25%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        /* 마우스 호버 및 활성화된 페이지 텍스트 색상 커스텀 */
+        .hover-primary:hover { color: #FB923C !important; }
+        .active-primary { color: #FB923C !important; }
+    </style>
+</head>
+
+<body class="bg-white text-gray-900">
+    <nav class="sticky top-0 bg-white/90 backdrop-blur-md border-b border-gray-100 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="mtc-logo.png" alt="MTC Logo" class="h-10 w-auto object-contain">
+                
+                <div class="text-xl font-bold tracking-tighter">
+                    <a href="home.html">CUK <span class="text-blue-600">.</span></a>
+                </div>
+            </div>
+            
+            <div class="hidden md:flex space-x-8 text-sm font-medium text-gray-600">
+                <a href="home.html" class="hover-primary transition uppercase">home</a>
+                <a href="people.html" class="active-primary hover-primary transition uppercase">people</a>
+                <a href="lecture.html" class="hover-primary transition uppercase">lecture</a>
+                <a href="research.html" class="hover-primary transition uppercase">research</a>
+                <a href="publications.html" class="hover-primary transition uppercase">publications</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="page-banner">
+        <h2 class="text-5xl font-bold text-white tracking-tight">People</h2>
+    </section>
+
+    <main class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row gap-16 items-start">
+            <div class="w-full md:w-1/4 aspect-[3/4] bg-gray-100 overflow-hidden">
+                <img src="Professor Profile.jpeg" alt="Professor Profile" class="w-full h-full object-cover">
+            </div>
+
+            <div class="w-full md:w-3/4">
+                <div class="mb-8">
+                    <h3 class="text-3xl font-bold mb-2">윤정우 <span class="text-xl font-medium text-gray-400 ml-2">Christine Jungwoo Yoon</span></h3>
+                    <p class="text-[#FB923C] font-semibold uppercase text-sm tracking-wider mb-1">Professor, Media Technology & Contents</p>
+                    <p class="text-sm text-gray-400">Jungwooyoon@catholic.ac.kr</p>
+                </div>
+
+                <div class="space-y-12">
+                    <section>
+                        <h4 class="text-xs font-bold tracking-widest text-gray-400 uppercase mb-4">Bio</h4>
+                        <p class="text-sm text-gray-600 leading-relaxed">
+                            Jungwoo Christine Yoon is a Korean-Canadian designer and educator teaching in the post-secondary education since 2011 in Vancouver, NYC, Daegu and Seoul. She is an Associate Professor in the Media Technology Contents Department at Catholic University of Korea. She holds Ph.D. in Communication Design from Hongik University in Seoul, MS, Communication/Packaging Design from Pratt Institute, NYC, and BFA, Industrial Design from ECUAD, Vancouver. Her interest in research lies in visual design of online shopping environment focused on inclusion of elderly people with physical and physiological limitations. Her area of expertise in professional design practice and teaching is in structure-focused beauty and food packaging design. She is the Vice President of the Korean Society of Cartoon and Animations (KOSCAS), a member of the board of directors of the Bucheon International Animation Festival Organizing Committee (BIAF), and a member of the board of directors of the Korea Society of Basic Design & Art (KSBDA).
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 py-12 px-6 text-center">
+        <div class="max-w-7xl mx-auto text-sm text-gray-400">
+            <p>@cuk</p>
+            <p class="mt-2 uppercase tracking-widest text-[10px]">The Catholic University of Korea, Bucheon, Republic of Korea</p>
+        </div>
+    </footer>
+
+</body>
+</html>
